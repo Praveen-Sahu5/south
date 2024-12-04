@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MOSHIN Heavy Duty Slow Rotation Puncture Solutions</title>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Sign in</h1>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="button" id="signin-button" value="Click to Sign In">
+        </form>
+    </div>
+    <div class="forget-options">
+        <div class="forgot-section">
+            <p>Forgot Password</p>
+            <a href="#" class="action-button">Click to find password</a>
+        </div>
+        <div class="forgot-section">
+            <p>Forgot Referrer Name</p>
+            <a href="#" class="action-button">Click to find email</a>
+        </div>
+    </div>
+    <p class="para-2">Not have an account? <a href="Register.html">Register here</a></p>
+
+    <script>
+        
+        document.getElementById('signin-button').addEventListener('click', function () {
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if (email && password) {
+                alert('Sign in successful!');
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>

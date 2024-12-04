@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MOSHIN Heavy Duty Slow Rotation Puncture Solutions</title>
+</head>
+<body>
+    <div class="signup-box">
+        <h1>REGISTER THE REFERRER (Yourself) – Join the Club</h1>
+        <form id="registration-form">
+            <label for="referrer-name">Referrer Name (unique)</label>
+            <input type="text" id="referrer-name" placeholder="Referrer Name (unique)" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <label for="re-password">Re-input Password</label>
+            <input type="password" id="re-password" placeholder="Re-input Password" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="cell-number">Cell Number</label>
+            <input type="tel" id="cell-number" placeholder="Cell Number" pattern="[0-9]{10}" required>
+
+            <label for="account-name">Account Name</label>
+            <input type="text" id="account-name" placeholder="Account Name" required>
+
+            <label for="bank-name">Bank Name</label>
+            <input type="text" id="bank-name" placeholder="Bank Name" required>
+
+            <label for="account-number">Account Number</label>
+            <input type="text" id="account-number" placeholder="Account Number" pattern="[0-9]{9,18}" required>
+
+            <label for="account-type">Type of Account</label>
+            <input type="text" id="account-type" placeholder="Type of Account" required>
+
+            <input type="button" id="load-button" value="Click to Load">
+        </form>
+    </div>
+    <p class="para-2">Already have an account? <a href="Signin.html">Sign in</a></p>
+
+    <script>
+       
+        document.getElementById('load-button').addEventListener('click', function () {
+           
+            const referrerName = document.getElementById('referrer-name').value;
+            const password = document.getElementById('password').value;
+            const rePassword = document.getElementById('re-password').value;
+            const email = document.getElementById('email').value;
+            const cellNumber = document.getElementById('cell-number').value;
+            const accountName = document.getElementById('account-name').value;
+            const bankName = document.getElementById('bank-name').value;
+            const accountNumber = document.getElementById('account-number').value;
+            const accountType = document.getElementById('account-type').value;
+
+            
+            if (
+                referrerName &&
+                password &&
+                rePassword &&
+                email &&
+                cellNumber &&
+                accountName &&
+                bankName &&
+                accountNumber &&
+                accountType
+            ) {
+                
+                if (password === rePassword) {
+                    alert('Register Successful!');
+                } else {
+                    alert('Passwords do not match. Please try again.');
+                }
+            } else {
+                alert('Please fill in all the fields.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+body {
+    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signup-box {
+    width: 360px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.login-box{
+    width:360px;
+    padding:20px;
+    height:250px;
+    margin:auto;
+    border-radius:15px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 16px; 
+    color: #333;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 10px; 
+    font-size: 12px; 
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 6px; 
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 5px;
+    font-size: 12px; 
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 30px; 
+    margin-top: 15px;
+    background-color: #fd7e14;
+    color: white;
+    font-size: 13px; 
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #e96c0d;
+}
+.forget-options{
+    margin-top:15px;
+    text-align:left;
+}
+.forgot-section p {
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+}
+
+.action-button {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 22px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-button:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 11px; 
+    color: black;
+}
+
+.para-2 {
+    margin-top: 15px; 
+    color: black;
+    font-size: 21px;
+}
+
+
+.para-2 a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.para-2 a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .signup-box, .login-box {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .forget-options {
+        margin-top: 10px;
+    }
+
+    .forgot-section p {
+        font-size: 18px;
+    }
+
+    .action-button {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .para-2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-box, .login-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .forgot-section p {
+        font-size: 16px;
+    }
+
+    .action-button {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .para-2 {
+        font-size: 16px;
+    }
+
+    .para-2 a {
+        font-size: 16px;
+    }
+}

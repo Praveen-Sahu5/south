@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>MOSHIN Heavy Duty Slow Rotation Puncture Solutions</h1>
+        <h2>R501 Referrals</h2>
+        <nav>
+            <ul>
+                <li><a href="#Home Page">Home Page</a></li>
+                <li><a href="#">Referral History</a></li>
+                <li><a href="#">Client Info</a></li>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="Signin.html">Sign In</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="left-section">
+                <p>
+                    If you the referrer supply us with a clients details and the first order from the client then
+                    provided that the client pays for the order we will pay you R501 per 20 liter container within a
+                    week.
+                </p>
+                <p>If no order is placed within 2 months, then the order falls away.</p>
+                <p>
+                    If there are multiple referrals for the same order/client then we will use the earliest valid order
+                    which we have received.
+                </p>
+                <p>
+                    If referrers have different names for the same client, then we will determine which order is the
+                    first order.
+                </p>
+                <p>
+                    When further orders come in for the same client/referrer, the referrer will receive R250 per
+                    container on the order from that order on.
+                </p>
+                <p>
+                    If a referrer does not supply any new leads for a period of six months, they will no longer be Club
+                    members and will not receive further funds.
+                </p>
+            </div>
+            <div class="right-section">
+                <h3>Referral Form</h3>
+                <form id="referral-form">
+                    <label for="id">Your ID</label>
+                    <input type="text" id="id" name="id" placeholder="Enter your ID" required>
+
+                    <label for="client-name">Client Name</label>
+                    <input type="text" id="client-name" name="client-name" placeholder="Enter client's full name"
+                        required>
+
+                    <label for="client-cell">Client Cell Number</label>
+                    <input type="tel" id="client-cell" name="client-cell" placeholder="Enter client's cell number"
+                        required>
+
+                    <label for="client-email">Client Email</label>
+                    <input type="email" id="client-email" name="client-email" placeholder="Enter client's email "
+                        required>
+
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Enter company name">
+
+                    <label for="price">Price per Container</label>
+                    <input type="number" id="price" name="price" placeholder="Enter price per container" required>
+
+                    <label for="containers">Number of Containers</label>
+                    <input type="number" id="containers" name="containers" placeholder="Enter number of containers"
+                        required>
+
+                    <label for="town">Town</label>
+                    <input type="text" id="town" name="town" placeholder="Enter town" required>
+
+                    <label for="details">Details</label>
+                    <textarea id="details" name="details" placeholder="Enter additional details"></textarea>
+
+                    <button type="submit">Click to Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

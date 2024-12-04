@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Referral Form</a></li>
+                <li><a href="Admin.html" class="active">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Submitted Referrals</h2>
+        <div class="scroll-container">
+            <table id="referral-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Client Name</th>
+                        <th>Client Cell</th>
+                        <th>Client Email</th>
+                        <th>Company Name</th>
+                        <th>Price</th>
+                        <th>Containers</th>
+                        <th>Town</th>
+                        <th>Details</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script>
+       
+        const referrals = JSON.parse(localStorage.getItem("referrals")) || [];
+        const tableBody = document.getElementById("referral-table").querySelector("tbody");
+
+        referrals.forEach((referral) => {
+            const row = document.createElement("tr");
+
+            for (let key in referral) {
+                const cell = document.createElement("td");
+                cell.textContent = referral[key];
+                row.appendChild(cell);
+            }
+
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>
